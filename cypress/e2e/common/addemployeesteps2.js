@@ -16,3 +16,15 @@ And('the user clicks on PIM module', () => {
  cy.contains(dashboard.pimmenu).click()
 
 })
+
+And('the user clicks on the Add Employee submenu', () => {
+
+ cy.get(dashboard.addemployee)
+
+})
+
+And('the user clicks on the Add Employee submenu', () => {
+
+    cy.get(dashboard.addemployee)
+   
+   })
