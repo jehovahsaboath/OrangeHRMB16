@@ -1,10 +1,8 @@
-import { Given, Then, And } from "cypress-cucumber-preprocessor/steps";
+import { Given, Then, And, When } from "cypress-cucumber-preprocessor/steps";
 
 import dashboardpage from "../../Pages/dashboardpage.pom"
 
 import addemployee from "../../Pages/addemployee.pom";
-
-import login from "../../fixtures/logindata.json";
 
 import data from "../../fixtures/logindata.json"
 
@@ -21,6 +19,7 @@ And('click on PIM module', () =>{
     cy.contains(dashboardpage.pimmenu()).click()
 
 })
+
 
 And('user clicks on the Add Employee submenu', () =>{
 

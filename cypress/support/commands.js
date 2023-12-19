@@ -27,8 +27,7 @@
 
 Cypress.Commands.add('login', () => {
     
-
-    cy.visit("https://orangehrm.qedgetech.com/symfony/web/index.php/auth/login")
+    cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
     
     cy.get("input[placeholder='Username']").type(Cypress.env("username"))
 
@@ -44,7 +43,6 @@ Cypress.Commands.add('login', () => {
 
 Cypress.Commands.add('loginfail', (user, pass) => {
     
-
     cy.visit("/web/index.php/auth/login")
     
     cy.get("input[placeholder='Username']").type("user")
@@ -63,18 +61,18 @@ Cypress.Commands.add('loginfail', (user, pass) => {
 Cypress.Commands.add("enterText", (element, text)=>{
 
 
-    if(element.includes("//")){
+    // if(element.includes("//")){
 	
-	   cy.get(element).type(text)
+	//    cy.get(element).type(text)
 	
-	}
-	else{
+	// }
+	// else{
 	
-	cy.get(element).type(text)
-	cy.log("the text type is:"+text)
+	// cy.get(element).type(text)
+	// cy.log("the text type is:"+text)
 
 
-    }
+    // }
 
 
 
