@@ -6,7 +6,7 @@ describe('Validate Login Functionality', () => {
 
     })
 
-    it.only('verify login with valid username and Invalid password', () => {
+    it('verify login with valid username and Invalid password', () => {
 
         cy.visit("/web/index.php/auth/login")
     
@@ -35,8 +35,6 @@ describe('Validate Login Functionality', () => {
     })
 
     it('verify login with Invalid username and Invalid password', () => {
-        
-        
         
         //cy.viewport("ipad-mini")
 
